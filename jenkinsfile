@@ -6,7 +6,7 @@ steps{
 sh "mvn compile"
 }
 }
-stage("unit test"){
+stage("Unit test"){
 steps{
 sh "mvn test"
 }
