@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/mallela009/Calculator1.git'
+            }
+        }
+        
+        
+        stage('Build') {
+            steps {
+                echo 'mvn compile'
+            }
+        }
+        
+        stage('unit test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}
