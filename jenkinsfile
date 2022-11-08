@@ -1,0 +1,20 @@
+pipeline{
+agent any
+stages{
+stage("checkout"){
+steps{
+git url ''
+}
+}
+stage("build"){
+steps{
+sh ''
+}
+}
+stage("test"){
+steps{
+sh ''
+}
+}
+}
+}
